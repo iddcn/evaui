@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tab Demo</title>
+    <script type="text/javascript" src="http://a.yintai.org/rs/js/eva/1.0.3/eva.js"></script>
+    <style type="text/css">
+        #demo {
+          padding-top: 29px;
+          position: relative;
+          width: 750px;
+        }
+        #demo .eva-switchable-triggers {
+          left: 20px;
+          margin-top: -29px;
+          position: absolute;
+          z-index: 99;
+          list-style:none;
+        }
+        #demo .eva-switchable-triggers li {
+          background: url("ui.yintai.org/mockup/docs/eva/api/img/tabs-sprite.gif") no-repeat scroll 0 6px transparent;
+          cursor: pointer;
+          float: left;
+          height: 27px;
+          line-height: 21px;
+          margin-right: 3px;
+          padding-top: 8px;
+          text-align: center;
+          width: 130px;
+        }
+        #demo li.eva-switchable-active {
+          background-position: 0 -40px;
+          cursor: default;
+        }
+        #demo .eva-switchable-panels {
+          border: 1px solid #AEC7E5;
+          height: 120px;
+          padding: 20px;
+          position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <ul class="eva-switchable-triggers">
+            <li class="eva-switchable-active">tab1</li>
+            <li>tab2</li>
+        </ul>
+        <div class="eva-switchable-panels">
+            <div>content1</div>
+            <div style="display:none;">content2</div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        Eva.require("tab").ready(function (S) {
+            var ele = S.one("#demo");
+            var tab = new S.Tab(ele);
+        });
+    </script>
+</body>
+</html>

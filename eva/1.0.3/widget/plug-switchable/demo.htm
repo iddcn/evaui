@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Switchable Demo</title>
+    <script type="text/javascript" src="http://a.yintai.org/rs/js/eva/1.0.2/eva.dev.js"></script>
+    <style type="text/css">
+        body
+        {
+            font-size:12px;
+        }
+        *{margin:0;padding:0;border:none;list-style:none;}
+        .demo{position:relative;width:470px;}
+        .hidden{display:none;}
+        #demo1 .eva-switchable-panels{width:470px; height:150px; overflow:hidden;}
+        #demo1 .eva-switchable-active{color:#000 !important;}
+        #demo1 .eva-switchable-triggers{position: absolute; bottom: 5px; right: 5px; z-index: 99;}
+        #demo1 .eva-switchable-triggers li {
+            float: left;
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            margin-left: 3px;
+            background-color: #FCF2CF;
+            border: 1px solid #F47500;
+            color: #D94B01;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabs - 普通标签页</h2> 
+    <style> 
+        #demo2 { position: relative; width: 750px; padding-top: 29px; margin-bottom:20px;}
+        #demo2 .eva-switchable-triggers { position: absolute; left: 20px; margin-top: -29px; z-index: 99; }
+        #demo2 .eva-switchable-triggers li {
+            float: left;
+            width: 130px;
+            height: 27px;
+            line-height: 21px;
+            text-align: center;
+            background: url(http://docs.kissyui.com/kissy/src/switchable/assets/tabs-sprite.gif) no-repeat 0 6px;
+            margin-right: 3px;
+            padding-top: 8px;
+            cursor: pointer;
+        }
+        #demo2 .eva-switchable-triggers li.active { background-position: 0 -40px; cursor: default; }
+        #demo2 .eva-switchable-panels {
+            position: relative;
+            height: 120px;
+            padding: 20px;
+            border: 1px solid #AEC7E5;
+        }
+    </style> 
+    <div id="demo2" class="section"> 
+        <ul class="eva-switchable-triggers"> 
+            <li class="active">标题 A</li> 
+            <li>标题 B</li> 
+            <li>标题 C</li> 
+            <li>标题 D</li> 
+        </ul> 
+        <div class="eva-switchable-panels"> 
+            <div> 
+    <pre> 
+      - 在当前 trigger 中 mouseover/mouseout, click, focus, 不触发
+      - 鼠标快速滑过非当前 trigger, 不触发
+      - mouseover 到非当前 trigger, 停留时间到达延迟时，触发
+      - click 或 Tab 切换到 trigger, 立即触发
+      - beforeSwitch/onSwitch 事件的触发
+      - 延迟的内容能正确加载
+    </pre> 
+            </div> 
+            <div style="display: none">内容 B</div> 
+            <div style="display: none">内容 C</div> 
+            <div style="display: none">内容 D</div> 
+        </div> 
+    </div> 
+    <script type="text/javascript">
+        Eva.require("plug-switchable").ready(function (S) {
+            S.one("#demo2").plug({ fn: S.Plugin.Switchable, cfg: { activeTriggerCls: "active", delay:0} });
+        });
+    </script>
+    <div id="demo1" class="demo">
+        <ol class="eva-switchable-panels">
+            <li dd="1"><a href="http://ju.atpanel.com/?url=http://www.taobao.com/go/act/discount/hdfk091222.php?ad_id=&amp;am_id=&amp;cm_id=1400213687422f80dd4d&amp;pm_id=150021371293fce706af" target="_blank"><img alt="" src="http://img05.taobaocdn.com/tps/i5/T1HllqXjXpXXXXXXXX-470-150.jpg"/></a></li>
+            <li dd="2"><a target="_blank" href="http://click.mz.simba.taobao.com/cc_mt?p=&amp;s=24760534&amp;e=%2FzU1KBMrzT1jMRVFtqDNyn1tgJqIJA3Hy9QloO7MbgHOIBqxgkWBGKUTW8JURsTh01ynhY4RKTMplHfnVnxiYajw5JHBVqSAXBrj%2Bf%2BTLVcq5t6PSe6eCT%2F8Tn1KGQ46A85BMYIsMXzYy8dzkPxQZCyLyt0ostjNaENU1Z0QCSZaXSgNYtb%2FwhYogN3jOrIE2Q9NE12H0Hk111VWqQddJzvjKwdymURFo%2BK2etf0wTrlhYBv%2B5sdunm4S3KBeGdooeLPkaQt4Mg4u3TgCNezGX1Mh9B64cCdF8VN3SsQNW%2BgArkM4F%2BFplGwl1UuyTCLtMOb3cgDCxBQldTmR3mwFhNV09QNPjZ2bUxM3CBHkfb2wyn42y1yjjwMVjNQnmpt4NEtPh%2F5PsbupFa6ZZ2sVQdCo%2FjLJ9sf&amp;ec=ffloYVIRbFZ%2BaahPJekdUQ%3D%3D&amp;c=17016"><img alt="" width="470" height="150" border="0" src="http://img.alimama.cn/bcrm/adboard/picture/2009-12-24/091224170529.gif"/></a></li>
+            <li dd="3"><a target="_blank" href="http://click.mz.simba.taobao.com/cc_mt?p=&amp;s=24760534&amp;e=%2FzU1KBMrzT1jMRVFtqDNyn1tgJqIJA3Hy9QloO7MbgHOIBqxgkWBGKUTW8JURsTh01ynhY4RKTMplHfnVnxiYajw5JHBVqSAXBrj%2Bf%2BTLVcq5t6PSe6eCT%2F8Tn1KGQ46A85BMYIsMXzYy8dzkPxQZCyLyt0ostjNaENU1Z0QCSZaXSgNYtb%2FwhYogN3jOrIE2Q9NE12H0Hk111VWqQddJzvjKwdymURFo%2BK2etf0wTrlhYBv%2B5sdunm4S3KBeGdooeLPkaQt4Mg4u3TgCNezGX1Mh9B64cCdF8VN3SsQNW%2BgArkM4F%2BFplGwl1UuyTCLtMOb3cgDCxBQldTmR3mwFhNV09QNPjZ2bUxM3CBHkfb2wyn42y1yjjwMVjNQnmpt4NEtPh%2F5PsbupFa6ZZ2sVQdCo%2FjLJ9sf&amp;ec=ffloYVIRbFZ%2BaahPJekdUQ%3D%3D&amp;c=17016"><img alt="" width="470" height="150" border="0" src="http://img.alimama.cn/bcrm/adboard/picture/2009-12-29/091229160359.jpg"/></a></li>
+            <li dd="4"><a href="http://ju.atpanel.com/?url=http://www.taobao.com/go/act/focus/nzdc_qqg2.php?TBG=7285.module-1.4&amp;ad_id=&amp;am_id=&amp;cm_id=140021305131ef184707&amp;pm_id=15002137139b40e4bba3" target="_blank"><img alt="" src="http://img01.taobaocdn.com/tps/i1/T1qS0qXhBhXXXXXXXX-470-150.jpg"/></a></li>
+        </ol>
+        <!--<ul class="eva-switchable-triggers"><li class="">a</li><li>b</li><li class="">c</li><li class="">d</li></ul>-->
+    </div>
+    <script type="text/javascript">
+        Eva.require("plug-switchable").ready(function (S) {
+            /*
+            delay:当triggerType为hover时，则在该值指定的时间后执行switch动作，单位是“秒”
+            steps:步长，一次switch的panel个数
+            switchTo:初始化switch到的下标
+            */
+            S.one("#demo1").plug({ fn: S.Plugin.Switchable, cfg: { delay: 0.2} }).switchable.on("switch", function () { alert("switched"); }); ;
+        });
+    </script>
+</body>
+</html>

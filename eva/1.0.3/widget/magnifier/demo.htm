@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="http://zuoxianjin.yintai.org/projects/resource/css/global.css" />
+    <script type="text/javascript">
+        evaCfg = {
+            path: "http://zuoxianjin.yintai.org/rs/"
+        }  
+    </script>
+    
+    <!--<script type="text/javascript" src="http://a.yintai.org/js/eva/eva.js">
+    </script>-->
+    <script type="text/javascript" src="../../eva.js"></script>
+   <script type="text/javascript" src="../../../../../../Docs/eva/js/api-console.js"></script>
+</head>
+<body class="yui3-skin-sam">
+    <!--<div style="width:250px; height:325px;">
+        <div class="zoom-small-image">
+            <a href='http://www.professorcloud.com/images/zoomengine/bigimage00.jpg' id="TestMagnifier">
+                <img src="http://www.professorcloud.com/images/zoomengine/smallimage.jpg" alt=''
+                    title="Optional title display" />
+            </a>
+        </div>
+    </div>-->
+    <!--<div class="zoom-desc">
+        <h3>
+            Standard Settings With Gallery</h3>
+        <p>
+            <a href='http://www.professorcloud.com/images/zoomengine/bigimage00.jpg' title="Thumbnail 1" rel="http://www.professorcloud.com/images/zoomengine/smallimage.jpg" />
+                <img src="http://www.professorcloud.com/images/zoomengine/tinyimage.jpg" alt=''
+                    title="Optional title display" />
+            </a> <a href='http://www.professorcloud.com/images/zoomengine/bigimage01.jpg' title="Thumbnail 2" rel="http://www.professorcloud.com/images/zoomengine/smallimage-1.jpg">
+                <img class="zoom-tiny-image" src="http://www.professorcloud.com/images/zoomengine/tinyimage-1.jpg"
+                    alt="Thumbnail 2" /></a> <a href='http://www.professorcloud.com/images/zoomengine/bigimage02.jpg'
+                        class='cloud-zoom-gallery' title='Thumbnail 3' rel="http://www.professorcloud.com/images/zoomengine/smallimage-2.jpg">
+                        <img class="zoom-tiny-image" src="http://www.professorcloud.com/images/zoomengine/tinyimage-2.jpg"
+                            alt="Thumbnail 3" /></a></p>
+    </div>-->
+    <div style="width:250px; height:325px;">
+        <div class="zoom-small-image">
+			<a title="Princess衣本色公主长身外套39037905" id="TestMagnifier" href="http://pimg.yintai.com/product/02/013/000b/zoomimage/20109216405977.jpg">
+				<img alt="Princess衣本色公主长身外套39037905" src="http://pimg.yintai.com/product/02/013/000b/bigimage/20109216405977.jpg" />
+			</a>
+        </div>
+ 
+    </div>
+    <div class="zoom-desc">
+        <p>
+            <a title="Thumbnail 1" rel="http://pimg.yintai.com/product/02/013/000b/bigimage/20109216405977.jpg"  href="http://pimg.yintai.com/product/02/013/000b/zoomimage/20109216405977.jpg">
+				<img alt="Princess衣本色公主长身外套39037905" src="http://pimg.yintai.com/product/02/013/000b/smallimage/20109216405977.jpg" />
+            </a> 
+			<a title="Princess衣本色公主长身外套39037905" rel="http://pimg.yintai.com/product/02/013/000b/bigimage/201092164059710.jpg" href="http://pimg.yintai.com/product/02/013/000b/zoomimage/201092164059710.jpg">
+				<img alt="Princess衣本色公主长身外套39037905" src="http://pimg.yintai.com/product/02/013/000b/smallimage/201092164059710.jpg" />
+            </a>
+ 
+			<a title="Princess衣本色公主长身外套39037905" rel="http://pimg.yintai.com/product/02/013/000b/bigimage/20109216410270.jpg" href="http://pimg.yintai.com/product/02/013/000b/zoomimage/20109216410270.jpg">
+				<img alt="Princess衣本色公主长身外套39037905" src="http://pimg.yintai.com/product/02/013/000b/smallimage/20109216410270.jpg" />
+			</a>
+ 
+		</p>
+    </div>
+
+    <script type="text/javascript">
+        Eva.require("node", "magnifier").ready(function (Y) {
+            var zoom = new Y.Magnifier("#TestMagnifier", "http://pimg.yintai.com/product/02/013/000b/bigimage/20109216405977.jpg", "http://pimg.yintai.com/product/02/013/000b/zoomimage/20109216405977.jpg", { position: "right", title: "title dislay" });
+            var anchors = Y.all(".zoom-desc a");
+            anchors.each(function (node) {
+                node.on("click", function (e) {
+                    e.halt();
+                    zoom.initFor(e.currentTarget.get("rel"), e.currentTarget.get("href"), { title: e.currentTarget.get("title") });
+                });
+            });
+            Y.one("#dstBtn").on("click", function () {
+                debugger;
+                zoom.destroy();
+            });
+        });
+    </script>
+    <div class="console-pannel">
+        <div id="console">
+        </div>
+    </div>
+    <div style="position: absolute; top: 100px; left: 450px;">
+        <select>
+            <option>dddd</option>
+        </select>
+        <select>
+            <option>dddd</option>
+        </select>
+        <select>
+            <option>dddd</option>
+        </select>
+        <select>
+            <option>dddd</option>
+        </select>
+    </div>
+    <div >
+        <button id="dstBtn">注销</button>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+.magnifier-wrap
+{
+    zoom:1;
+}
+.magnifier-mousetrap
+{
+}
+
+.magnifier-lens {
+	border: 1px solid #fff;
+	background-color:#ccc;	
+	cursor:move;			
+}
+
+.magnifier-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+}
+
+.magnifier-zoom-big {
+	border:1px solid #ccc;
+	overflow:hidden;
+	zoom:1;
+}
+
+.magnifier-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #e1e1e1;
+	z-index:200;
+}
+
+

@@ -1,0 +1,16 @@
+﻿.linkshare-loading{padding-left:20px;background:url('/rs/img/widget/linkshare/ajax-loader.gif') no-repeat;}
+.linkshare-copy{margin-left:10px;}
+.linkshare-icon a{background:url('/rs/img/widget/linkshare/shareicon.png') no-repeat;line-height:100px;height:16px;width:16px;overflow:hidden;display:inline-block;*zoom:1;vertical-align:middle;margin-right:6px;}
+.linkshare-icon .renren{background-position:0 -48px;}
+.linkshare-icon .kaixin{background-position:0 -64px;}
+.linkshare-icon .tsina{background-position:0 -80px;}
+.linkshare-icon .tsohu{background-position:0 -96px;}
+.linkshare-icon .qzone{background-position:0 -112px;}
+.linkshare-icon .com51{background-position:0 0;}
+.linkshare-icon .douban{background-position:0 -16px;}
+.linkshare-icon .tqq{background-position:0 -128px;}
+.linkshare-icon .t163{background-position:0 -176px;}
+
+.linkshare-copy,.linkshare-copy i{border:1px solid #ccc;display:inline-block;*zoom:1;}
+.linkshare-copy i{border:1px solid #fff;background:url('/rs/img/widget/linkshare/shareicon.png') repeat-x 0 100%;font-style:normal;padding:2px 5px;line-height:1;color:#777}
+.linkshare-copy:hover i{background:#fbfbfb none;color:#000}

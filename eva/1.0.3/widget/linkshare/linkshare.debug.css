@@ -1,0 +1,10 @@
+.linkshare-loading{padding-left:20px;background:url('/rs/img/widget/linkshare/loading.gif') no-repeat;}
+.linkshare-copy{margin-left:16px;}
+.linkshare-icon a{background:url('/rs/img/widget/linkshare/icon.png') no-repeat;line-height:100px;height:17px;width:17px;overflow:hidden;display:inline-block;*zoom:1;vertical-align:middle;margin-right:10px;}
+.linkshare-icon .renren{background-position:-61px 0;}
+.linkshare-icon .kaixin{background-position:-82px 0;}
+.linkshare-icon .tsina{background-position:-103px 0;}
+.linkshare-icon .tsohu{background-position:-124px 0;}
+.linkshare-icon .qzone{background-position:-145px 0;}
+.linkshare-icon .com51{background-position:0 0;}
+.linkshare-icon .douban{background-position:-20px 0;}

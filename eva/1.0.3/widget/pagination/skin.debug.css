@@ -1,0 +1,55 @@
+/*Pagination*/
+.t-pagination a,
+.t-pagination a:link,
+.t-pagination a:visited{
+	font-size:12px;
+	font-family:Tahoma;
+	color:#999999;
+	text-decoration:none;
+	line-height:1.5em;
+	_line-height:15px;
+	background-color:white;
+}
+.t-pagination a:hover {
+	color:#B90D0D;
+	text-decoration:underline;
+}
+.t-pagination.textright{text-align:right}
+.t-pagination.textleft{text-align:left}
+.t-pagination a,
+.t-pagination a:link,
+.t-pagination a:visited {text-decoration:none;border:1px solid #d4d4d4;padding:2px 6px 3px}
+.t-pagination a:hover{background:#B90D0D;color:#fff;text-decoration:none}
+.t-pagination a.current:hover,.t-pagination a.t-pagenull:hover{background:none;color:#464646}
+.t-pagination a.current,
+.t-pagination a.current:link,
+.t-pagination a.current:visited,
+.t-pagination a.t-pagenull,
+.t-pagination a.t-pagenull:link,
+.t-pagination a.t-pagenull:visited {color:#B90D0D;font-weight:bold;cursor:text }
+.t-pagination a.current:hover{color:#B90D0D;background-color:white;}
+.t-pagination a.t-pagenull,
+.t-pagination a.t-pagenull:link,
+.t-pagination a.t-pagenull:visited{font-weight:normal;color:#464646}
+.t-pagination .t-p-frame{width:1em;height:25px;padding-left:4px;overflow:hidden;display:inline-block;vertical-align:middle}
+.t-pagination .t-p-framebelt{display:block;width:9000px}
+.t-pagination .t-p-framebelt a,.t-pagination .t-p-framebelt span{display:block;float:left;margin-right:4px;padding:1px 6px;margin-top:1px;*margin-top:2px}
+
+
+/*--hack for firefox2--*/
+.t-pagination .t-p-framebelt, x:-moz-any-link {display:inline;}
+.t-pagination .t-p-framebelt, x:-moz-any-link, x:default {display:block;}
+
+.t-pagination .t-p-framebelt a,.t-pagination .t-p-framebelt span,x:-moz-any-link {display:inline;float:none;padding:2px 6px ;}
+.t-pagination .t-p-framebelt a,.t-pagination .t-p-framebelt span,x:-moz-any-link, x:default {display:block;float:left;padding:1px 6px;}
+
+.t-pagination .t-p-frame ,x:-moz-any-link  {vertical-align:baseline;}
+.t-pagination .t-p-frame ,x:-moz-any-link, x:default {vertical-align:middle;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari 3.0 and Chrome rules here */
+	.t-pagination .t-p-framebelt a{padding:0px 6px;}
+}
+
+/*--评论先登录的文案--*/
+.t-comment-nologin {font-size:14px; color:#464646; font-weight:bold;padding-left:270px;padding-top:10px;background:url('/rs/img/widget/pagination/icon.gif') no-repeat 200px 0px;height:45px;}

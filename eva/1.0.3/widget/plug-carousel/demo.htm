@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Carousel Demo</title>
+    <script type="text/javascript" src="http://a.yintai.org/rs/js/eva/1.0.2/eva.dev.js"></script>
+    <style type="text/css">
+        *{margin:0;padding:0;border:none;list-style:none;}
+        body{font-size:12px;}
+        .demo{margin:20px;}
+        #demo1{position:relative;width:470px;}
+        .hidden{display:none;}
+        .eva-switchable-panels{width:470px; height:150px; overflow:hidden;}
+        .eva-switchable-active{color:#000 !important;}
+        .handler{position: absolute; bottom: 5px; right: 5px; z-index: 99;}
+        .handler li{
+            float: left;
+            width: 50px;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 3px;
+            background-color: #FCF2CF;
+            border: 1px solid #F47500;
+            color: #D94B01;
+            text-align: center;
+            cursor: pointer;
+        }
+        .eva-switchable-disable-btn{color:#999 !important;}
+    </style>
+</head>
+<body>
+    <div id="demo1" class="demo">
+        <ol class="eva-switchable-panels">
+            <li><a href="http://ju.atpanel.com/?url=http://www.taobao.com/go/act/discount/hdfk091222.php?ad_id=&amp;am_id=&amp;cm_id=1400213687422f80dd4d&amp;pm_id=150021371293fce706af" target="_blank"><img alt="" src="http://img05.taobaocdn.com/tps/i5/T1HllqXjXpXXXXXXXX-470-150.jpg"/></a></li>
+            <li><a target="_blank" href="http://click.mz.simba.taobao.com/cc_mt?p=&amp;s=24760534&amp;e=%2FzU1KBMrzT1jMRVFtqDNyn1tgJqIJA3Hy9QloO7MbgHOIBqxgkWBGKUTW8JURsTh01ynhY4RKTMplHfnVnxiYajw5JHBVqSAXBrj%2Bf%2BTLVcq5t6PSe6eCT%2F8Tn1KGQ46A85BMYIsMXzYy8dzkPxQZCyLyt0ostjNaENU1Z0QCSZaXSgNYtb%2FwhYogN3jOrIE2Q9NE12H0Hk111VWqQddJzvjKwdymURFo%2BK2etf0wTrlhYBv%2B5sdunm4S3KBeGdooeLPkaQt4Mg4u3TgCNezGX1Mh9B64cCdF8VN3SsQNW%2BgArkM4F%2BFplGwl1UuyTCLtMOb3cgDCxBQldTmR3mwFhNV09QNPjZ2bUxM3CBHkfb2wyn42y1yjjwMVjNQnmpt4NEtPh%2F5PsbupFa6ZZ2sVQdCo%2FjLJ9sf&amp;ec=ffloYVIRbFZ%2BaahPJekdUQ%3D%3D&amp;c=17016"><img alt="" width="470" height="150" border="0" src="http://img.alimama.cn/bcrm/adboard/picture/2009-12-24/091224170529.gif"/></a></li>
+            <li><a target="_blank" href="http://click.mz.simba.taobao.com/cc_mt?p=&amp;s=24760534&amp;e=%2FzU1KBMrzT1jMRVFtqDNyn1tgJqIJA3Hy9QloO7MbgHOIBqxgkWBGKUTW8JURsTh01ynhY4RKTMplHfnVnxiYajw5JHBVqSAXBrj%2Bf%2BTLVcq5t6PSe6eCT%2F8Tn1KGQ46A85BMYIsMXzYy8dzkPxQZCyLyt0ostjNaENU1Z0QCSZaXSgNYtb%2FwhYogN3jOrIE2Q9NE12H0Hk111VWqQddJzvjKwdymURFo%2BK2etf0wTrlhYBv%2B5sdunm4S3KBeGdooeLPkaQt4Mg4u3TgCNezGX1Mh9B64cCdF8VN3SsQNW%2BgArkM4F%2BFplGwl1UuyTCLtMOb3cgDCxBQldTmR3mwFhNV09QNPjZ2bUxM3CBHkfb2wyn42y1yjjwMVjNQnmpt4NEtPh%2F5PsbupFa6ZZ2sVQdCo%2FjLJ9sf&amp;ec=ffloYVIRbFZ%2BaahPJekdUQ%3D%3D&amp;c=17016"><img alt="" width="470" height="150" border="0" src="http://img.alimama.cn/bcrm/adboard/picture/2009-12-29/091229160359.jpg"/></a></li>
+            <li><a href="http://ju.atpanel.com/?url=http://www.taobao.com/go/act/focus/nzdc_qqg2.php?TBG=7285.module-1.4&amp;ad_id=&amp;am_id=&amp;cm_id=140021305131ef184707&amp;pm_id=15002137139b40e4bba3" target="_blank"><img alt="" src="http://img01.taobaocdn.com/tps/i1/T1qS0qXhBhXXXXXXXX-470-150.jpg"/></a></li>
+        </ol>
+        <ul class="handler">
+            <li class="eva-switchable-prev">Prev</li>
+            <li class="eva-switchable-next">Next</li>
+        </ul>
+    </div>
+    <style>
+    .scrollable {
+        position: relative;
+        width: 820px;
+    }
+    .scrollable .eva-switchable-prev, .scrollable .eva-switchable-next {
+        position: absolute;
+        top: 50px;
+        color: #666;
+        cursor: pointer;
+    }
+    .scrollable .eva-switchable-prev { left: 10px; }
+    .scrollable .eva-switchable-next { right: 10px; }
+    .scrollable .eva-switchable-disable { color: #ddd; cursor: default; }
+
+    .scrollable .eva-switchable-triggers {
+        position: absolute;
+        right: 30px;
+        top: -10px;
+    }
+    .scrollable .eva-switchable-triggers li {
+        float: left;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .scrollable .eva-switchable-triggers li.eva-switchable-active {
+        color: #C8282B !important;
+    }
+
+    .scroller {
+        position: relative;
+        width: 680px;
+        height: 120px;
+        border: 1px solid #ccc;
+        background-color: #F9F9F9;
+        margin: auto;
+        overflow: hidden;
+    }
+    .scroller .eva-switchable-panels img {
+        float: left;
+        width: 100px;
+        height: 75px;
+        padding: 2px;
+        margin: 20px 15px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        display: inline !important; /* fix ie6 双边距 bug */
+    }
+</style>
+
+    <div id="demo2" class="section scrollable">
+        <span id="scroller-prev" class="eva-switchable-prev">&lsaquo; 上一页</span> <span id="scroller-next"
+            class="eva-switchable-next">下一页 &rsaquo;</span>
+        <div class="scroller">
+            <div class="eva-switchable-panels">
+                <img alt="" src="http://farm1.static.flickr.com/143/321464099_a7cfcb95cf_t.jpg" />
+                <img alt="" src="http://farm4.static.flickr.com/3089/2796719087_c3ee89a730_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/79/244441862_08ec9b6b49_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/28/66523124_b468cf4978_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/164/399223606_b875ddf797_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/163/399223609_db47d35b7c_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/135/321464104_c010dbf34c_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/40/117346184_9760f3aabc_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/153/399232237_6928a527c1_t.jpg" />
+                <img alt="" src="http://farm1.static.flickr.com/50/117346182_1fded507fa_t.jpg" />
+                <img alt="" src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
+                <img alt="" src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
+                <img alt="" src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
+                <img alt="" src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
+                <img alt="" src="http://farm4.static.flickr.com/3624/3323893148_8318838fbd_t.jpg" />
+            </div>
+            <ul class="eva-switchable-triggers">
+                <li>&bull;</li>
+                <li>&bull;</li>
+                <li>&bull;</li>
+            </ul>
+        </div>
+    </div>
+    <div id="demo3" class="section scrollable">
+        <span class="eva-switchable-prev">&lsaquo; 上一页</span> <span
+            class="eva-switchable-next">下一页 &rsaquo;</span>
+        <div class="scroller" style="width:135px;">
+            <div class="eva-switchable-panels">
+                <img alt="" src="http://farm1.static.flickr.com/143/321464099_a7cfcb95cf_t.jpg" />
+                <img alt="" src="http://farm4.static.flickr.com/3089/2796719087_c3ee89a730_t.jpg" />
+                
+            </div>
+            <ul class="eva-switchable-triggers" style="display:none">
+                <li>&bull;</li>
+                <li>&bull;</li>
+                <li>&bull;</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        Eva.require("plug-carousel", "plug-switchable-effect").ready(function (S) {
+
+            S.one("#demo1").plug([{ fn: S.Plugin.Carousel, cfg: { hasTrigger: false} }, { fn: S.Plugin.SwitchableEffect, cfg: { effect: "fade", relateType: "carousel"}}]).carousel.on("itemSelect", function (e) {
+
+                alert("item selected");
+            });
+
+            /*
+            steps:执行但不switch的个数
+            viewSize:手动设置视窗的宽度，插件内部是通过region.width以及steps的个数得出视窗宽度的，而此时如果列表项存在margin值则会导致获取到的视窗宽度出现偏差，所以，此处需要手动这是其宽度。
+            effect:指定横向滚动
+            relateType:指定该SwitchableEffect绑定的是继承自Switchable的Carousel插件
+            easing:指定了动画效果
+            */
+            S.one("#demo2").plug([{ fn: S.Plugin.Carousel, cfg: { circular: true, steps: 5, viewSize: [680]} }, { fn: S.Plugin.SwitchableEffect, cfg: { effect: "scrollX", relateType: "carousel", easing: "easeOutStrong", duration: 1}}]);
+            
+            S.one("#demo3").plug([{ fn: S.Plugin.Carousel, cfg: { circular: true, steps: 1, viewSize: [137]} }, { fn: S.Plugin.SwitchableEffect, cfg: { effect: "scrollX", relateType: "carousel", easing: "easeOutStrong", duration: 1}}]);
+        });
+    </script>
+</body>
+</html>

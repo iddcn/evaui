@@ -1,0 +1,1 @@
+S.add('ebase-io',function(Y){Y.mix(S.base,{getData:function(){},postData:function(){}});});
